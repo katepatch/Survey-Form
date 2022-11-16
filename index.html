@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Survey Form</title>
+    <link rel="stylesheet" type="text/css" href="styles.css"/>
+    </head>
+    <body>
+      <h1 id="title">Survey Form</h1>
+      <p id="description">What kind of meal do you prefer?</p>
+      <form id="survey-form">
+        <fieldset>
+          <label id="name-label">Please enter your name: <input type="text" id="name" placeholder="first and last name" required/></label>
+          <label id="email-label">Please enter your email: <input id="email" type="email" placeholder="your@email.com" required/></label>
+          <label id="number-label">Please enter your phone number: <input id="number" type="number" placeholder="555-555-5555" min="10" max="99999999999" required/></label>
+          </fieldset>
+          <fieldset>
+          <label>Favorite entree to chowdown on?
+            <select id="dropdown">
+              <option value="">Please select one</option>
+              <option value="1">Pizza</option>
+              <option value="2">Burritos</option>
+              <option value="3">Burgers</option>
+              </select>
+              </label>
+            </fieldset>
+            <fieldset>
+              <p>What goes best with that?</p>
+              <label><input type="radio" name="side" class="inline" value="fav"/>Salad</label>
+              <label><input type="radio" name="side" class="inline" value="fav"/>Rice and Beans</label>
+              <label><input type="radio" name="side" class="inline" value="fav"/>Fries</label>
+              </fieldset>
+              <fieldset>
+                <p>Alright, what'll you have to drink?</p>
+                <label><input type="checkbox" value="fav-drink" class="inline" name="drink">Soda</label>
+                <label><input type="checkbox" value="fav-drink" class="inline" name="drink">Lemonade</label>
+                <label><input type="checkbox" value="fav-drink" class="inline" name="drink">Water</label>
+                </fieldset>
+                <fieldset>
+                  <label id="place">Where you gonna eat this bad boy?
+                    <textarea name="place" rows="3" cols="30" placeholder="I like to eat on the subway..."></textarea>
+                    </label>
+                    </fieldset>
+                    <input id="submit" type="submit" value="SUBMIT"/>
+                    </form>
+                    </body>
+                    </html>
+
+
